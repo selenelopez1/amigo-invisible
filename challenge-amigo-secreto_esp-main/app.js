@@ -34,6 +34,27 @@ recorrer el arreglo amigos y crear elementos de lista (<li>) para cada título.
 
 Agregar elementos a la lista: Para cada amigo, crear un nuevo elemento de lista.
 */
+
+/*
+Escribe una función que seleccione de manera aleatoria
+ uno de los nombres almacenados en el array amigos. 
+ Usa Math.random() y Math.floor() para obtener un índice aleatorio.
+
+Tareas específicas:
+
+Validar que haya amigos disponibles: Antes de sortear, 
+comprobar si el array amigos no está vacío.
+
+Generar un índice aleatorio: Usar Math.random() y
+ Math.floor() para seleccionar un índice aleatorio del arreglo.
+
+Obtener el nombre sorteado: Utilizar el índice 
+aleatorio para acceder al nombre correspondiente en el arreglo.
+
+Mostrar el resultado: Actualizar el contenido del elemento 
+de resultado utilizando document.getElementById()  e innerHTML 
+para mostrar el amigo sorteado.
+*/
 let amigosInvisibles = [];
 
 function agregarAmigo (){
@@ -63,4 +84,15 @@ function actualizarListaAmigos() {
         lista.appendChild(li)
     }
     console.log(amigosInvisibles)
+}
+
+function sortearAmigo (){
+    if (amigosInvisibles.length === 0){
+        alert("No hay amigos para sortear");
+        return;
+    }
+    let indiceAleatorio = Math.floor (Math.random() * amigosInvisibles.length)
+    let amigoSorteado = amigosInvisibles [indiceAleatorio]
+    let resultado = document.getElementById("resultado")
+    resultado.innerHTML = "El amigo sorteado es: <strong>" + amigoSorteado + "</strong>";
 }
