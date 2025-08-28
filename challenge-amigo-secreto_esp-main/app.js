@@ -64,7 +64,10 @@ let nombre = input.value.trim()
 if (nombre === ""){
     alert("Por favor, inserte un nombre.")
     return
-    }
+} else if (amigosInvisibles.includes(nombre)) {
+    alert("Ese nombre ya fue agregado.");
+    return;
+}
     // array de amigos
 amigosInvisibles.push(nombre)
 
