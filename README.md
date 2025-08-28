@@ -6,11 +6,12 @@ Ideal para practicar **manipulación del DOM**, **arrays** y **eventos en JS**.
 ---
 
 ## 📂 Estructura del proyecto
+```text
 /AmigoSecreto
 │
-├─ index.html # Archivo HTML principal
-├─ style.css # Estilos del proyecto
-└─ app.js # Lógica en JavaScript
+├─ index.html    # Archivo HTML principal
+├─ style.css     # Estilos del proyecto
+└─ app.js        # Lógica en JavaScript
 
 
 ---
