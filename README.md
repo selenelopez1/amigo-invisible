@@ -13,7 +13,7 @@ Ideal para practicar **manipulación del DOM**, **arrays** y **eventos en JS**.
 ├─ style.css     # Estilos del proyecto
 └─ app.js        # Lógica en JavaScript
 
-
+```
 ---
 
 ## ✨ Funcionalidades
